@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Employee-List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**О проекте:**\
+ Проект был разработан в рамках тестового задания для компании Pizza Soft.
+ Проект представляет из себя SPA с двумя страницами:
+ 1) Страница списка сотрудников, где мы можем сортировать и фильтровать список
+ 2) Страница редактирования/добавления сотрудников
 
-Currently, two official plugins are available:
+**Как запустить проект:**
+- Выполнить установку зависимостей - `npm i`
+- Запустить Vite для разработки - `npm run dev`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Что сделано
+- Страница со списком сотрудников
+- Панель для фильтрации и сортировки списка сотрудников
+- При клике на сотрудника, мы переходим на страницу редактирования пользователя
+- Кнопка добовления пользователя, при клики на которую открывается страница добавления пользователя
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Технологии
+- Vite
+- React
+- TypeScript
+- Redux ToolKit
+- Sass
+- React-hook-form
+- React-toastify
+- React-router-dom
