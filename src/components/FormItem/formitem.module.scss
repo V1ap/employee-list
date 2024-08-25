@@ -1,0 +1,36 @@
+@import "@/styles/vars";
+
+.formItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  &__label {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+  }
+
+  &__input {
+    max-width: 20rem;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid $blackColor;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    transition: border-color 0.25s ease;
+
+    &:focus {
+      border-color: $grayColor;
+    }
+  }
+
+  &__error {
+    position: absolute;
+    top: 100%;
+    font-size: 0.75rem;
+    color: $redColor;
+  }
+}

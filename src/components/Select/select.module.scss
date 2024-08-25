@@ -1,0 +1,76 @@
+@import "@/styles/vars";
+
+.select__container {
+  position: relative;
+}
+
+.select__btn {
+  height: px;
+  min-width: 20rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  color: $blackColor;
+  border: 0.125rem solid $blackColor;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $grayColor;
+    color: $whiteColor;
+  }
+}
+
+.select__list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  max-width: 20rem;
+  overflow: auto;
+  max-height: 20rem;
+  border: 0.125rem solid $blackColor;
+  border-radius: 0.5rem;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    width: 0.125rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 0.375rem 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grayColor;
+    border-radius: 0.25rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+  }
+}
+
+.select__item {
+  width: 100%;
+}
+
+.select__itemBtn {
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.5s ease;
+  background-color: $whiteColor;
+  border: none;
+
+  &:hover {
+    background-color: $grayColor;
+    color: $whiteColor;
+  }
+}

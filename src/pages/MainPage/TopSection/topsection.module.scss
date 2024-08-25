@@ -1,0 +1,38 @@
+@import "@/styles/vars";
+
+.topSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__btn {
+    min-height: max-content;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $whiteColor;
+    background-color: $greenColor;
+    border-radius: 0.5rem;
+    border: 0.125rem solid $greenColor;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $whiteColor;
+      color: $greenColor;
+    }
+  }
+}

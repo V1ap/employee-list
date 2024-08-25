@@ -1,0 +1,36 @@
+@import "@/styles/vars";
+
+.checkbox {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.125rem solid $blackColor;
+  border-radius: 0.25rem;
+  cursor: pointer;
+
+  &.small {
+    width: 1rem;
+    height: 1rem;
+
+    &::before {
+      width: 0.6875rem;
+      height: 0.6875rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.0625rem;
+    left: 0.0625rem;
+    width: 1.1875rem;
+    height: 1.1875rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+  }
+
+  &.checked::before {
+    background-color: $blackColor;
+  }
+}
