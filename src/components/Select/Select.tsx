@@ -3,13 +3,17 @@ import { generateRandomString } from "@/utils/generateRandomString";
 import styles from "./select.module.scss";
 import { useState, useRef } from "react";
 
-interface ISelect {
+interface ISelectProps {
   items: string[];
   currentItem: string;
   setCurrentItem: (item: string) => void;
 }
 
-const Select: React.FC<ISelect> = ({ items, setCurrentItem, currentItem }) => {
+const Select: React.FC<ISelectProps> = ({
+  items,
+  setCurrentItem,
+  currentItem,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const divRef = useRef<HTMLDivElement | null>(null);
 

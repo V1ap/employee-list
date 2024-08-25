@@ -5,7 +5,7 @@ const dateError = "Некорректная дата";
 export const checkName = (value: string) => {
   const splitedValue = value.split(" ");
 
-  if (splitedValue.length < 2) return nameError;
+  if (splitedValue.length !== 2) return nameError;
 
   if (splitedValue[0].length > 100 || splitedValue[1].length > 100)
     return nameError;
